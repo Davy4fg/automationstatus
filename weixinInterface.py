@@ -53,7 +53,7 @@ class WeixinInterface:
         if msgType == 'event':
             #mscontent == xml.find("Event").text
             if xml.find("Event").text == 'subscribe':#关注的时候的欢迎语
-                return self.render.reply_text(fromUser, toUser, int(time.time()), u"谢谢你的关注，我是北京大学计算机科学技术研究所信息抽取小组的AI～\n输入help看看如何调戏我\n输入about来了解我们是谁\n你也可以在后台留言对我们的改进意见")
+                return self.render.reply_text(fromUser, toUser, int(time.time()), u"This is platform for automation status share.\n Please send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
         if msgType == 'text':
             content = xml.find("Content").text
             if content == 'help':
@@ -80,6 +80,6 @@ class WeixinInterface:
             	return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
             else:
                 #return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
-                return self.render.reply_text(fromUser, toUser, int(time.time()), "哎呀 数据库中没有相关信息，但是你的留言我已经收到～\n输入help看看如何调戏我\n输入about来了解我们是谁\n你也可以在后台留言对我们的改进意见")
+                return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
         else:
-            return self.render.reply_text(fromUser, toUser, int(time.time()), "哎呀 数据库中没有相关信息，但是你的留言我已经收到～\n输入help看看如何调戏我\n输入about来了解我们是谁\n你也可以在后台留言对我们的改进意见")
+            return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
