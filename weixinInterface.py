@@ -23,6 +23,7 @@ class WeixinInterface:
 
     def GET(self):
         print('GGGET')
+        return 'hi ggget'
         #获取输入参数
         data = web.input()
         signature=data.signature
@@ -42,8 +43,6 @@ class WeixinInterface:
         #如果是来自微信的请求，则回复echostr
         if hashcode == signature:
             return echostr
-        else:
-            return 'hi ggget'
 
         
     def POST(self):
