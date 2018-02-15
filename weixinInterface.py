@@ -84,6 +84,6 @@ class WeixinInterface:
             	return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
             else:
                 #return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
-                return self.render.reply_text(fromUser, toUser, int(time.time()), r'Such &lt;&gt; command is not supported.\n{Please} [send] !@#$%^&*()<>,.:;?// "h" to \"get help\' infomation\nAny problem or suggestion, just feel free to leave a message2')
+                return self.render.reply_text(fromUser, toUser, int(time.time()), r'<BODY><BR>Such &lt;&gt; command is not supported.\n{Please} [send] !@#$%^&*()<>,.:;?// "h" to \"get help\' infomation\nAny problem or suggestion, just feel free to leave a message2<\BODY>')
         else:
             return self.render.reply_text(fromUser, toUser, int(time.time()), r'Such msgType is not supported.\n')
