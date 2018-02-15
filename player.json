@@ -1,5 +1,24 @@
 [
 	{
+		"id" : 0,
+		"name" : "test",
+		"ch_name" : "测试",
+		"number" : 0,
+		"position" : "接应",
+		"nationality" : "中国",
+		"birth_date" : "1989-04-29 00:00:00",
+		"height" : 185,
+		"weight" : 75,
+		"club" : null,
+		"spike" : 300,
+		"block" : 295,
+		"birth_place" : "Busan",
+		"hobbies" : null,
+		"favorite_book" : "Novels",
+		"club_debut" : "Chungang",
+		"international_debut" : "Thailand"
+	},
+	{
 		"id" : 1,
 		"name" : "Heejin Kim",
 		"ch_name" : "金熙珍",
