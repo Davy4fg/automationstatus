@@ -10,8 +10,8 @@ from lxml import etree
 
 with open('player.json', 'r') as f1:
     data1 = json.load(f1)
-with open ('encounter.json', 'r') as f2:
-    data2 = json.load(f2)
+# with open ('encounter.json', 'r') as f2:
+#     data2 = json.load(f2)
 
 
 class WeixinInterface:
