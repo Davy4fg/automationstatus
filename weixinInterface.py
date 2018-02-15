@@ -23,7 +23,7 @@ class WeixinInterface:
 
     def GET(self):
         print('GGGET')
-        return 'hi ggget'
+        return '<BODY><BR>First line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         #获取输入参数
         data = web.input()
         signature=data.signature
