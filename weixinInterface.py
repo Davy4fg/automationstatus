@@ -53,7 +53,7 @@ class WeixinInterface:
         if msgType == 'event':
             #mscontent == xml.find("Event").text
             if xml.find("Event").text == 'subscribe':#关注的时候的欢迎语
-                return self.render.reply_text(fromUser, toUser, int(time.time()), u"This is platform for automation status share.\n Please send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
+                return self.render.reply_text(fromUser, toUser, int(time.time()), u"This is platform for automation status share.\n Please send \'h\' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
         if msgType == 'text':
             content = xml.find("Content").text
             if content == 'help':
@@ -80,6 +80,6 @@ class WeixinInterface:
             	return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
             else:
                 #return self.render.reply_text(fromUser, toUser, int(time.time()), "\n".join(list))
-                return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
+                return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send \'h\' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
         else:
-            return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send 'h' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
+            return self.render.reply_text(fromUser, toUser, int(time.time()), "Such command is not supported.\nPlease send \'h\' to get help infomation\nAny problem or suggestion, just feel free to leave a message")
