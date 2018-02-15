@@ -64,7 +64,7 @@ class WeixinInterface:
                 reply = u'我们收录了参加奥运会的所有国家的球员信息\n你可以输入“国家”来获取我们收录的国家集合\n你可以输入这些国家的中文名来获取球队成员姓名（如 中国）\n输入任何女排球员的中文名来获取她的信息（如 魏秋月）\n\n输入about来看看主页君是谁\n\n不要输错字喔❤️建议先输国家名称获取球员名字再搜索球员信息'
                 return self.render.reply_text(fromUser, toUser, int(time.time()), reply)
             if content == 'a':
-                return self.render.reply_text(fromUser, toUser, int(time.time()), "是https://cn.linkedin.com/in/you-li-a9081a105")
+                return self.render.reply_text(fromUser, toUser, int(time.time()), "http://1.automationstatus.applinzi.com/weixin")
             if content == u'国家':
             	return self.render.reply_text(fromUser, toUser, int(time.time()), u'''巴西🇧🇷\n俄罗斯🇷🇺\n日本🇯🇵\n韩国🇰🇷\n阿根廷🇦🇷\n喀麦隆🇨🇲\n美国🇺🇸\n中国🇨🇳\n塞尔维亚🇷🇸\n意大利🇮🇹\n荷兰🇳🇱\n波多黎各🇵🇷''')
             #elif content == 'm':
