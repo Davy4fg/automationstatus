@@ -22,6 +22,7 @@ class WeixinInterface:
         self.render = web.template.render(self.templates_root)
 
     def GET(self):
+        print('GET')
         #获取输入参数
         data = web.input()
         signature=data.signature
@@ -43,7 +44,8 @@ class WeixinInterface:
             return echostr
 
         
-    def POST(self):        
+    def POST(self):
+        print('POST')
         str_xml = web.data() #获得post来的数据
         xml = etree.fromstring(str_xml)#进行XML解析
         #content=xml.find("Content").text#获得用户所输入的内容
