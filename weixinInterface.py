@@ -19,7 +19,7 @@ class HiInterface:
         self.templates_root = os.path.join(self.app_root, 'templates')
         self.render = web.template.render(self.templates_root)
     def GET(self):
-        print('Hi GGGET')
+        print('GGGET')
         return self.render.hi()
         return '<BODY><BR>HiInterfaceFirst line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         
