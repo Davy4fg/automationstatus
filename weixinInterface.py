@@ -33,7 +33,7 @@ class WeixinInterface:
 
     def GET(self):
         print('GGGET')
-        return self.render.hi()
+        return self.render.weixin()
         return '<BODY><BR>WeiXinInterfaceFirst line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         #获取输入参数
         data = web.input()
