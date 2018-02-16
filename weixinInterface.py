@@ -13,6 +13,10 @@ with open('player.json', 'r') as f1:
 # with open ('encounter.json', 'r') as f2:
 #     data2 = json.load(f2)
 
+class HiInterface:
+    def GET(self):
+	    return render.hi()
+
 
 class WeixinInterface:
 
