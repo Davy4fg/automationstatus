@@ -15,8 +15,8 @@ with open('player.json', 'r') as f1:
 
 class HiInterface:
     def GET(self):
-	    #return render.hi()
-        return 'HiInterface'
+	    return render.hi()
+        #return 'HiInterface'
 
 class WeixinInterface:
 
