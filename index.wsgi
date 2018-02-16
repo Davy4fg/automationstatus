@@ -17,6 +17,7 @@ render = web.template.render(templates_root)
 
 #app = web.application(urls, globals()).wsgifunc()        
 #application = sae.create_wsgi_app(app)
-app = web.application(urls, globals()).wsgifunc()     
+app = web.application(urls, globals()).wsgifunc() 
+app.debug = True    
 application = sae.create_wsgi_app(app)   
 #app.run()
