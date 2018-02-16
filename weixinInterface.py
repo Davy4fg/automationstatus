@@ -20,7 +20,7 @@ class HiInterface:
         self.render = web.template.render(self.templates_root)
     def GET(self):
         print('Hi GGGET')
-        #return render.hi()
+        return self.render.hi()
         return '<BODY><BR>HiInterfaceFirst line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         
 
@@ -33,7 +33,7 @@ class WeixinInterface:
 
     def GET(self):
         print('GGGET')
-        #return render.hi()
+        return self.render.hi()
         return '<BODY><BR>WeiXinInterfaceFirst line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         #获取输入参数
         data = web.input()
