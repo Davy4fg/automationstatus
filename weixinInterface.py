@@ -66,7 +66,7 @@ class WeixinInterface:
             if content == 'a':
                 return self.render.reply_text(fromUser, toUser, int(time.time()), "--> http://1.automationstatus.applinzi.com/weixin")
             if content == 'b':
-            	return self.render.reply_text(fromUser, toUser, int(time.time()), u'''美国🇺🇸\n中国🇨🇳\n''')
+            	return self.render.reply_text(fromUser, toUser, int(time.time()), u'''1美国🇺🇸\n2中国🇨🇳\n''')
             #elif content == 'm':
             #    return self.render.reply_news(fromUser, toUser, int(time.time()), 'a', 'b', 'https://az616578.vo.msecnd.net/files/responsive/cover/main/desktop/2016/03/18/635939394083003642-770889348_love%20pic.jpg', 'www.baidu.com')
             for iter in data1:
