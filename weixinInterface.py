@@ -14,6 +14,10 @@ with open('player.json', 'r') as f1:
 #     data2 = json.load(f2)
 
 class HiInterface:
+    def __init__(self):
+        self.app_root = os.path.dirname(__file__)
+        self.templates_root = os.path.join(self.app_root, 'templates')
+        self.render = web.template.render(self.templates_root)
     def GET(self):
         #return render.hi()
         return 'HiInterface'
