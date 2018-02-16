@@ -19,8 +19,9 @@ class HiInterface:
         self.templates_root = os.path.join(self.app_root, 'templates')
         self.render = web.template.render(self.templates_root)
     def GET(self):
+        print('Hi GGGET')
         #return render.hi()
-        return '<BODY><BR>HiInterface!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
+        return '<BODY><BR>HiInterfaceFirst line~!@#$%^&*()_`-=+{}[];:<>?,./<BR>2nd Line<BR></BODY> '
         
 
 class WeixinInterface:
