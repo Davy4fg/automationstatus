@@ -8,7 +8,7 @@ from weixinInterface import *
 
 urls = (
 '/weixin','WeixinInterface',
-'/hi*','HiInterface',
+'/hi.*','HiInterface',
 '/dev1','Dev1Interface',
 '/main','MainInterface',
 )
