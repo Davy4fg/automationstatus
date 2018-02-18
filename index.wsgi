@@ -9,6 +9,7 @@ from weixinInterface import *
 urls = (
 '/weixin','WeixinInterface',
 '/hi','HiInterface',
+'/dev1','Dev1Interface',
 )
 
 app_root = os.path.dirname(__file__)
