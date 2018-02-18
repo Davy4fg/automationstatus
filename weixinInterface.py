@@ -19,7 +19,7 @@ class HiInterface:
         self.templates_root = os.path.join(self.app_root, 'templates')
         self.render = web.template.render(self.templates_root)
     def GET(self):
-        print('GGGET')
+        print('GGGET Hi')
         return self.render.hi()
 		
 class Dev1Interface:
@@ -28,8 +28,17 @@ class Dev1Interface:
         self.templates_root = os.path.join(self.app_root, 'templates')
         self.render = web.template.render(self.templates_root)
     def GET(self):
-        print('GGGET')
+        print('GGGET Dev1')
         return self.render.dev1()
+
+class MainInterface:
+    def __init__(self):
+        self.app_root = os.path.dirname(__file__)
+        self.templates_root = os.path.join(self.app_root, 'templates')
+        self.render = web.template.render(self.templates_root)
+    def GET(self):
+        print('GGGET Main')
+        return self.render.main()
         
 
 class WeixinInterface:

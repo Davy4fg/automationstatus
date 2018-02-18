@@ -10,6 +10,7 @@ urls = (
 '/weixin','WeixinInterface',
 '/hi','HiInterface',
 '/dev1','Dev1Interface',
+'/main','MainInterface',
 )
 
 app_root = os.path.dirname(__file__)
